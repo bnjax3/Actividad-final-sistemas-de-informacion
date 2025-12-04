@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha de Inscripción — Club Deportivo</title>
+<link rel="stylesheet" href="/TP10/css/styles.css">
+</head>
+<body class="container">
+<header class="navbar"><a href="/TP10/index.html">Inicio</a></header>
+<h1>Ficha de Inscripción</h1>
+<form action="#" method="post">
+<div class="form-row">
+<label>Nombre completo</label>
+<input type="text" name="nombre">
+</div>
+<div class="form-row">
+<label>Documento / ID</label>
+<input type="text" name="dni">
+</div>
+<div class="form-row">
+<label>Email</label>
+<input type="email" name="email">
+</div>
+<div class="form-row">
+<label>Teléfono</label>
+<input type="text" name="telefono">
+</div>
+<div class="form-row">
+<label>Fecha de nacimiento</label>
+<input type="text" name="fnac" placeholder="DD/MM/AAAA">
+</div>
+
+
+<h3>Salud</h3>
+<div class="form-row">
+<label>¿Padece alguna enfermedad relevante? (describir)</label>
+<textarea name="salud"></textarea>
+</div>
+
+
+<h3>Actividad deportiva previa</h3>
+<div class="form-row">
+<label>Deportes realizados</label>
+<textarea name="antecedentes"></textarea>
+</div>
+
+
+<h3>Servicios que solicita</h3>
+<div class="form-row">
+<label>Seleccione deportes/servicios</label>
+<select name="servicios" multiple>
+<option>Fútbol</option>
+<option>Natación</option>
+<option>Gimnasio</option>
+<option>Pilates</option>
+</select>
+</div>
+
+
+<div class="form-row"><button type="submit">Enviar</button></div>
+</form>
+</body>
+</html>
