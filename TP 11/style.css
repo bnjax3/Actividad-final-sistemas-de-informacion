@@ -1,0 +1,51 @@
+.li{
+    font-size: large;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  
+}
+.noticia{
+    float: left;
+    border: 1px solid black;
+    background-color: rgb(221, 221, 221);
+    height: 600px;
+    width: 350px;
+    border-radius: 10px;
+    display: flex; justify-content: space-between;
+}
+.div{
+    padding-right: 30px;
+}
+.imgn{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    clear: left;
+}
+.txt{
+    padding-left: 10px;
+}
+/* asegura que no haya márgenes del body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* footer full width real */
+.footer {
+    width: 100%;
+    background-color: #222;   /* color de fondo */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    clear: left;
+}
+.separador {
+    width: 20px;
+}
+.p{
+    padding-left: 10px;
+}
