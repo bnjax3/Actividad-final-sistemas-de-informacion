@@ -49,3 +49,8 @@ body {
 .p{
     padding-left: 10px;
 }
+.img2{
+    padding-right: 20px; 
+    height: 250px; 
+    width: 250px;
+}
