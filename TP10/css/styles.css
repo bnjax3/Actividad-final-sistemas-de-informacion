@@ -1,0 +1,103 @@
+/* css/styles.css - estilos globales */
+*{box-sizing: border-box;}
+body{font-family: Arial, sans-serif; margin:20px;}
+
+
+/* Nav */
+.navbar{background:#222; padding:10px;}
+.navbar a{color:#fff; text-decoration:none; margin-right:12px;}
+
+
+/* Esquema de bloques: float + clear */
+.block{float:left; width:30%; padding:15px; margin:1%; min-height:90px; color:#fff}
+.block1{background-color:#6c5ce7}
+.block2{background-color:#00b894}
+.block3{background-color:#0984e3}
+.clearfix{clear:both;}
+
+
+/* Tarjeta de materia */
+.materia{overflow:hidden; margin-bottom:20px; padding:12px; border-radius:6px}
+.materia .thumb{float:left; width:120px; margin-right:12px}
+.materia .info{overflow:hidden}
+
+
+/* Horario - tablas */
+table{border-collapse: collapse; width:100%;}
+th,td{border:1px solid #ccc; padding:8px; text-align:center}
+th{background:#f1f1f1}
+
+
+/* Galería */
+.gallery{display:flex; flex-wrap:wrap; gap:10px}
+.gallery img{width:calc(25% - 10px); min-width:140px; height:auto;}
+
+
+/* Formulario de inscripción */
+.form-row{margin-bottom:10px}
+label{display:block; margin-bottom:4px}
+input[type="text"], input[type="email"], textarea, select{width:100%; padding:8px}
+
+
+/* Helpers */
+.container{max-width:1000px; margin:0 auto}
+.footer{margin-top:30px; font-size:0.9em; color:#666}
+
+
+@media (max-width:700px){
+.block{width:100%;}
+.gallery img{width:48%}
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #111;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff50a8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    opacity: 1;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
